@@ -84,18 +84,37 @@ class ViewController: UIViewController {
         if(checkWinPairs == 8)
         {
             setTimer(on: false)
+            createAlertForUserName()
         }
     }
     
     func disableOrUnableGameBoard(on : Bool){
         
-//        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
             for element in self.game_card_btn
             {
                     element.isUserInteractionEnabled = on
             }
-//        }
+    }
+    
+    func createAlertForUserName() {
+        //get name from user throgh alertController
+        let alert = UIAlertController(title: "Congratulation! ",
+                                      message: " You won!",
+                                      preferredStyle: .alert)
+        let submitAction = UIAlertAction(title: "Save my high score", style: .default, handler: { (action) -> Void in
+            // Get 1st TextField's text
+            print(alert.textFields![0].text!)
+        })
+        alert.addTextField { (textField: UITextField) in
+            textField.keyboardAppearance = .dark
+            textField.keyboardType = .default
+            textField.autocorrectionType = .default
+            textField.placeholder = "Enter your name"
+            textField.clearButtonMode = .whileEditing
+        }
+        alert.addAction(submitAction)
         
+        present(alert, animated: true, completion: nil)
     }
     
 
