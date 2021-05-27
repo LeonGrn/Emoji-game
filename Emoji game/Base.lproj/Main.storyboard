@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Emoji_game" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="2fq-kX-Cdf">
+                                <rect key="frame" x="0.0" y="44" width="428" height="848"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="041-Sq-W9D">
+                                        <rect key="frame" x="0.0" y="0.0" width="428" height="424"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ttW-ty-vFY" userLabel="VerticalCards">
+                                                <rect key="frame" x="0.0" y="0.0" width="428" height="424"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="eIK-fP-cbI" userLabel="HorizontalCards">
+                                                        <rect key="frame" x="0.0" y="0.0" width="428" height="98.666666666666671"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E6u-bb-iJF">
+                                                                <rect key="frame" x="0.0" y="0.0" width="99.666666666666671" height="98.666666666666671"/>
+                                                                <inset key="contentEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                                                                <state key="normal" title="Button" image="background"/>
+                                                                <connections>
+                                                                    <action selector="game_card_click:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WJM-NR-Ndm"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jih-jd-ZPR">
+                                                                <rect key="frame" x="109.66666666666669" y="0.0" width="99.333333333333314" height="98.666666666666671"/>
+                                                                <inset key="contentEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                                                                <state key="normal" title="Button" image="background"/>
+                                                                <connections>
+                                                                    <action selector="game_card_click:" destination="BYZ-38-t0r" eventType="touchUpInside" id="P74-yy-ipJ"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Ae-JJ-F4g">
+                                                                <rect key="frame" x="218.99999999999997" y="0.0" width="99.666666666666657" height="98.666666666666671"/>
+                                                                <inset key="contentEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                                                                <state key="normal" title="Button" image="background"/>
+                                                                <connections>
+                                                                    <action selector="game_card_click:" destination="BYZ-38-t0r" eventType="touchUpInside" id="E1n-va-Ocf"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="siM-6T-cvI">
+                                                                <rect key="frame" x="328.66666666666669" y="0.0" width="99.333333333333314" height="98.666666666666671"/>
+                                                                <inset key="contentEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                                                                <state key="normal" title="Button" image="background"/>
+                                                                <connections>
+                                                                    <action selector="game_card_click:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5RA-7r-g91"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="l5t-71-Ehp" userLabel="HorizontalCards">
+                                                        <rect key="frame" x="0.0" y="108.66666666666666" width="428" height="98.333333333333343"/>
+                                                        <subviews>
+                                                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Ru-cN-1qd">
+                                                                <rect key="frame" x="0.0" y="0.0" width="99.666666666666671" height="98.333333333333329"/>
+                                                                <inset key="contentEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                                                                <state key="normal" title="Button" image="background"/>
+                                                                <connections>
+                                                                    <action selector="game_card_click:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qvh-Wx-g50"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dEQ-nG-y8o">
+                                                                <rect key="frame" x="109.66666666666669" y="0.0" width="99.333333333333314" height="98.333333333333329"/>
+                                                                <inset key="contentEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                                                                <state key="normal" title="Button" image="background"/>
+                                                                <connections>
+                                                                    <action selector="game_card_click:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GW4-92-6LV"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="icM-qF-cEv">
+                                                                <rect key="frame" x="218.99999999999997" y="0.0" width="99.666666666666657" height="98.333333333333329"/>
+                                                                <inset key="contentEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                                                                <state key="normal" title="Button" image="background"/>
+                                                                <connections>
+                                                                    <action selector="game_card_click:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VwV-Kr-MHY"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LRF-Ig-LGZ">
+                                                                <rect key="frame" x="328.66666666666669" y="0.0" width="99.333333333333314" height="98.333333333333329"/>
+                                                                <inset key="contentEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                                                                <state key="normal" title="Button" image="background"/>
+                                                                <connections>
+                                                                    <action selector="game_card_click:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pdM-iH-7HX"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ldN-dT-GCf" userLabel="HorizontalCards">
+                                                        <rect key="frame" x="0.0" y="216.99999999999997" width="428" height="98.666666666666657"/>
+                                                        <subviews>
+                                                            <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TEh-eY-ge9">
+                                                                <rect key="frame" x="0.0" y="0.0" width="99.666666666666671" height="98.666666666666671"/>
+                                                                <inset key="contentEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                                                                <state key="normal" title="Button" image="background"/>
+                                                                <connections>
+                                                                    <action selector="game_card_click:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SmE-h9-nEf"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oaq-vH-Jhl">
+                                                                <rect key="frame" x="109.66666666666669" y="0.0" width="99.333333333333314" height="98.666666666666671"/>
+                                                                <inset key="contentEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                                                                <state key="normal" title="Button" image="background"/>
+                                                                <connections>
+                                                                    <action selector="game_card_click:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gdr-GJ-yBU"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hFk-2J-KQt">
+                                                                <rect key="frame" x="218.99999999999997" y="0.0" width="99.666666666666657" height="98.666666666666671"/>
+                                                                <inset key="contentEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                                                                <state key="normal" title="Button" image="background"/>
+                                                                <connections>
+                                                                    <action selector="game_card_click:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dub-8v-IIJ"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gwT-Zy-utc">
+                                                                <rect key="frame" x="328.66666666666669" y="0.0" width="99.333333333333314" height="98.666666666666671"/>
+                                                                <inset key="contentEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                                                                <state key="normal" title="Button" image="background"/>
+                                                                <connections>
+                                                                    <action selector="game_card_click:" destination="BYZ-38-t0r" eventType="touchUpInside" id="A9J-gn-wY0"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ElN-pJ-4IO" userLabel="HorizontalCards">
+                                                        <rect key="frame" x="0.0" y="325.66666666666669" width="428" height="98.333333333333314"/>
+                                                        <subviews>
+                                                            <button opaque="NO" tag="12" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MRL-ML-rIg">
+                                                                <rect key="frame" x="0.0" y="0.0" width="99.666666666666671" height="98.333333333333329"/>
+                                                                <inset key="contentEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                                                                <state key="normal" title="Button" image="background"/>
+                                                                <connections>
+                                                                    <action selector="game_card_click:" destination="BYZ-38-t0r" eventType="touchUpInside" id="X3l-ph-2UR"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" tag="13" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R2j-A6-SBo">
+                                                                <rect key="frame" x="109.66666666666669" y="0.0" width="99.333333333333314" height="98.333333333333329"/>
+                                                                <inset key="contentEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                                                                <state key="normal" title="Button" image="background"/>
+                                                                <connections>
+                                                                    <action selector="game_card_click:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oRJ-Mb-inY"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" tag="14" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hfd-kx-cVH">
+                                                                <rect key="frame" x="218.99999999999997" y="0.0" width="99.666666666666657" height="98.333333333333329"/>
+                                                                <inset key="contentEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                                                                <state key="normal" title="Button" image="background"/>
+                                                                <connections>
+                                                                    <action selector="game_card_click:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LMj-lV-pHE"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" tag="15" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rQM-T6-KXi">
+                                                                <rect key="frame" x="328.66666666666669" y="0.0" width="99.333333333333314" height="98.333333333333329"/>
+                                                                <inset key="contentEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                                                                <state key="normal" title="Button" image="background"/>
+                                                                <connections>
+                                                                    <action selector="game_card_click:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3RE-id-zCe"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="ttW-ty-vFY" secondAttribute="trailing" id="RGj-1n-umN"/>
+                                            <constraint firstItem="ttW-ty-vFY" firstAttribute="leading" secondItem="041-Sq-W9D" secondAttribute="leading" id="WIR-R5-VmH"/>
+                                            <constraint firstAttribute="bottom" secondItem="ttW-ty-vFY" secondAttribute="bottom" id="qlC-QW-rVh"/>
+                                            <constraint firstItem="ttW-ty-vFY" firstAttribute="top" secondItem="041-Sq-W9D" secondAttribute="top" id="vHs-Sy-gbn"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4n8-oQ-Neh">
+                                        <rect key="frame" x="0.0" y="424" width="428" height="424"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="7mH-OK-mRZ">
+                                                <rect key="frame" x="20" y="20" width="388" height="384"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LfB-zI-Ua9" userLabel="game_moves_label">
+                                                        <rect key="frame" x="156" y="0.0" width="76.333333333333314" height="128"/>
+                                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <attributedString key="attributedText">
+                                                            <fragment content="MOVES:">
+                                                                <attributes>
+                                                                    <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <font key="NSFont" size="17" name="HoeflerText-Black"/>
+                                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                </attributes>
+                                                            </fragment>
+                                                        </attributedString>
+                                                        <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="shadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <size key="shadowOffset" width="0.0" height="0.0"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rDY-5M-ftu" userLabel="game_moves_counter">
+                                                        <rect key="frame" x="177" y="128" width="34" height="128"/>
+                                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <attributedString key="attributedText">
+                                                            <fragment content="0">
+                                                                <attributes>
+                                                                    <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <font key="NSFont" size="57" name="HoeflerText-Regular"/>
+                                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                </attributes>
+                                                            </fragment>
+                                                        </attributedString>
+                                                        <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="shadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <size key="shadowOffset" width="0.0" height="0.0"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aIc-mw-nqH" userLabel="timer_label">
+                                                        <rect key="frame" x="119" y="256" width="150" height="128"/>
+                                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="57"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="shadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <size key="shadowOffset" width="0.0" height="0.0"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                        <color key="tintColor" systemColor="systemYellowColor"/>
+                                        <constraints>
+                                            <constraint firstItem="7mH-OK-mRZ" firstAttribute="leading" secondItem="4n8-oQ-Neh" secondAttribute="leading" constant="20" id="KsX-fu-B01"/>
+                                            <constraint firstItem="7mH-OK-mRZ" firstAttribute="top" secondItem="4n8-oQ-Neh" secondAttribute="top" constant="20" id="QXy-PA-eJJ"/>
+                                            <constraint firstAttribute="trailing" secondItem="7mH-OK-mRZ" secondAttribute="trailing" constant="20" id="lRS-Zl-mZn"/>
+                                            <constraint firstAttribute="bottom" secondItem="7mH-OK-mRZ" secondAttribute="bottom" constant="20" id="waW-9O-03e"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="2fq-kX-Cdf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="6ly-59-Dun"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2fq-kX-Cdf" secondAttribute="trailing" id="FCc-qk-YRE"/>
+                            <constraint firstItem="2fq-kX-Cdf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="tsa-Hr-ZgH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="2fq-kX-Cdf" secondAttribute="bottom" id="yXc-aQ-WB8"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="game_moves_counter" destination="rDY-5M-ftu" id="08d-AL-wQq"/>
+                        <outlet property="game_timer" destination="aIc-mw-nqH" id="3cV-za-GRF"/>
+                        <outletCollection property="game_card_btn" destination="E6u-bb-iJF" collectionClass="NSMutableArray" id="iCd-LC-CQw"/>
+                        <outletCollection property="game_card_btn" destination="jih-jd-ZPR" collectionClass="NSMutableArray" id="EY4-fZ-NHI"/>
+                        <outletCollection property="game_card_btn" destination="7Ae-JJ-F4g" collectionClass="NSMutableArray" id="mkC-q6-0Lb"/>
+                        <outletCollection property="game_card_btn" destination="siM-6T-cvI" collectionClass="NSMutableArray" id="6bM-4Z-Dyi"/>
+                        <outletCollection property="game_card_btn" destination="8Ru-cN-1qd" collectionClass="NSMutableArray" id="OB5-u9-iEC"/>
+                        <outletCollection property="game_card_btn" destination="dEQ-nG-y8o" collectionClass="NSMutableArray" id="am3-QI-zfb"/>
+                        <outletCollection property="game_card_btn" destination="icM-qF-cEv" collectionClass="NSMutableArray" id="Aak-60-c0z"/>
+                        <outletCollection property="game_card_btn" destination="LRF-Ig-LGZ" collectionClass="NSMutableArray" id="1jk-Ga-LVl"/>
+                        <outletCollection property="game_card_btn" destination="TEh-eY-ge9" collectionClass="NSMutableArray" id="qf8-nv-IvJ"/>
+                        <outletCollection property="game_card_btn" destination="oaq-vH-Jhl" collectionClass="NSMutableArray" id="bz2-lH-KIx"/>
+                        <outletCollection property="game_card_btn" destination="hFk-2J-KQt" collectionClass="NSMutableArray" id="5H7-YC-97z"/>
+                        <outletCollection property="game_card_btn" destination="gwT-Zy-utc" collectionClass="NSMutableArray" id="Tns-dD-s3Y"/>
+                        <outletCollection property="game_card_btn" destination="MRL-ML-rIg" collectionClass="NSMutableArray" id="5Av-DW-fbf"/>
+                        <outletCollection property="game_card_btn" destination="R2j-A6-SBo" collectionClass="NSMutableArray" id="R9P-3Q-eGA"/>
+                        <outletCollection property="game_card_btn" destination="Hfd-kx-cVH" collectionClass="NSMutableArray" id="pJ7-fo-ryf"/>
+                        <outletCollection property="game_card_btn" destination="rQM-T6-KXi" collectionClass="NSMutableArray" id="wkb-Wr-TaK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="114.50892857142857"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background" width="512" height="512"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
