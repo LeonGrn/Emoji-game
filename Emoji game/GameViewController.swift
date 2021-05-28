@@ -36,6 +36,7 @@ class ViewController: UIViewController {
             card.setImage(backCard, for:.normal)
             card.isEnabled = true
         }
+        board.removeAll()
         shuffle()
         successCounter = 0
         setTimer(on: true)
