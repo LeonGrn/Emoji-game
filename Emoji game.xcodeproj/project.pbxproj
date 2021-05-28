@@ -13,8 +13,6 @@
 		433B8A09265810A50095CC4F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 433B8A07265810A50095CC4F /* Main.storyboard */; };
 		433B8A0B265810A60095CC4F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 433B8A0A265810A60095CC4F /* Assets.xcassets */; };
 		433B8A0E265810A60095CC4F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 433B8A0C265810A60095CC4F /* LaunchScreen.storyboard */; };
-		433B8A19265810A70095CC4F /* Emoji_gameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433B8A18265810A70095CC4F /* Emoji_gameTests.swift */; };
-		433B8A24265810A70095CC4F /* Emoji_gameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433B8A23265810A70095CC4F /* Emoji_gameUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,7 +33,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		433B89FE265810A50095CC4F /* Emoji game.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Emoji game.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		433B89FE265810A50095CC4F /* Emoji game.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = "Emoji game.app"; path = "/Users/leon.grinshpun/Desktop/Swift Projects/Emoji game/build/Debug-iphoneos/Emoji game.app"; sourceTree = "<absolute>"; };
 		433B8A01265810A50095CC4F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		433B8A03265810A50095CC4F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		433B8A05265810A50095CC4F /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
@@ -43,12 +41,8 @@
 		433B8A0A265810A60095CC4F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		433B8A0D265810A60095CC4F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		433B8A0F265810A60095CC4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		433B8A14265810A70095CC4F /* Emoji gameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Emoji gameTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		433B8A18265810A70095CC4F /* Emoji_gameTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Emoji_gameTests.swift; sourceTree = "<group>"; };
-		433B8A1A265810A70095CC4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		433B8A1F265810A70095CC4F /* Emoji gameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Emoji gameUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		433B8A23265810A70095CC4F /* Emoji_gameUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Emoji_gameUITests.swift; sourceTree = "<group>"; };
-		433B8A25265810A70095CC4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		433B8A14265810A70095CC4F /* Emoji gameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "Emoji gameTests.xctest"; path = "/Users/leon.grinshpun/Desktop/Swift Projects/Emoji game/build/Debug-iphoneos/Emoji gameTests.xctest"; sourceTree = "<absolute>"; };
+		433B8A1F265810A70095CC4F /* Emoji gameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "Emoji gameUITests.xctest"; path = "/Users/leon.grinshpun/Desktop/Swift Projects/Emoji game/build/Debug-iphoneos/Emoji gameUITests.xctest"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,20 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				433B8A00265810A50095CC4F /* Emoji game */,
-				433B8A17265810A70095CC4F /* Emoji gameTests */,
-				433B8A22265810A70095CC4F /* Emoji gameUITests */,
-				433B89FF265810A50095CC4F /* Products */,
 			);
-			sourceTree = "<group>";
-		};
-		433B89FF265810A50095CC4F /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				433B89FE265810A50095CC4F /* Emoji game.app */,
-				433B8A14265810A70095CC4F /* Emoji gameTests.xctest */,
-				433B8A1F265810A70095CC4F /* Emoji gameUITests.xctest */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		433B8A00265810A50095CC4F /* Emoji game */ = {
@@ -108,24 +89,6 @@
 				433B8A0F265810A60095CC4F /* Info.plist */,
 			);
 			path = "Emoji game";
-			sourceTree = "<group>";
-		};
-		433B8A17265810A70095CC4F /* Emoji gameTests */ = {
-			isa = PBXGroup;
-			children = (
-				433B8A18265810A70095CC4F /* Emoji_gameTests.swift */,
-				433B8A1A265810A70095CC4F /* Info.plist */,
-			);
-			path = "Emoji gameTests";
-			sourceTree = "<group>";
-		};
-		433B8A22265810A70095CC4F /* Emoji gameUITests */ = {
-			isa = PBXGroup;
-			children = (
-				433B8A23265810A70095CC4F /* Emoji_gameUITests.swift */,
-				433B8A25265810A70095CC4F /* Info.plist */,
-			);
-			path = "Emoji gameUITests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -215,7 +178,7 @@
 				Base,
 			);
 			mainGroup = 433B89F5265810A50095CC4F;
-			productRefGroup = 433B89FF265810A50095CC4F /* Products */;
+			productRefGroup = 433B89F5265810A50095CC4F;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -268,7 +231,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				433B8A19265810A70095CC4F /* Emoji_gameTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,7 +238,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				433B8A24265810A70095CC4F /* Emoji_gameUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

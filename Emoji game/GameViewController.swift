@@ -34,10 +34,14 @@ class ViewController: UIViewController {
         print("\(game_card_btn.count)")
         for card in game_card_btn{
             card.setImage(backCard, for:.normal)
+            card.isEnabled = true
         }
         shuffle()
         successCounter = 0
         setTimer(on: true)
+        checkWinPairs = 0
+        successCounter = 0
+        game_moves_counter.text = "\(successCounter)"
     }
     
     func shuffle(){
@@ -76,6 +80,7 @@ class ViewController: UIViewController {
             }
         }
         else {
+            self.game_timer.text = "00:00 S"
             timer.invalidate()//pause
         }
     }
@@ -101,9 +106,11 @@ class ViewController: UIViewController {
         let alert = UIAlertController(title: "Congratulation! ",
                                       message: " You won!",
                                       preferredStyle: .alert)
-        let submitAction = UIAlertAction(title: "Save my high score", style: .default, handler: { (action) -> Void in
+        let submitAction = UIAlertAction(title: "Play Again", style: .default, handler: { (action) -> Void in
             // Get 1st TextField's text
             print(alert.textFields![0].text!)
+            self.initGame()
+
         })
         alert.addTextField { (textField: UITextField) in
             textField.keyboardAppearance = .dark
